@@ -1,0 +1,6 @@
+framework module BitByteStream {
+  umbrella header "BitByteStream-umbrella.h"
+
+  export *
+  module * { export * }
+}

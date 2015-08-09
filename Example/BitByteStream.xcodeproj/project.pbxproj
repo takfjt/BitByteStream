@@ -12,6 +12,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		A2F82D371B77CE5500C92A93 /* BitByteStreamTest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2F82D361B77CE5500C92A93 /* BitByteStreamTest.m */; };
 		FA694B7BCCE9360F0712BF92 /* Pods_BitByteStream_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 956F7C828674DA755A3BE95A /* Pods_BitByteStream_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		6AA100C6A52D59BDDAC8028D /* Pods-BitByteStream_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitByteStream_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		7B48780623582F2003784EA6 /* Pods-BitByteStream_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitByteStream_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		956F7C828674DA755A3BE95A /* Pods_BitByteStream_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitByteStream_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2F82D361B77CE5500C92A93 /* BitByteStreamTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BitByteStreamTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
+				A2F82D361B77CE5500C92A93 /* BitByteStreamTest.m */,
 				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
 			);
@@ -238,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				A2F82D371B77CE5500C92A93 /* BitByteStreamTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
