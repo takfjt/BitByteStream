@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.version          = "0.0.1"
   s.summary          = "conversion stream between bit and byte"
   s.description      = <<-DESC
-                       conversion stream between bit and byte
+                       This library provides the conversion stream between bit and byte.
                        DESC
   s.homepage         = "https://github.com/takfjt/BitByteStream"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
