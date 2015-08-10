@@ -1,6 +1,6 @@
 # BitByteStream
 
-[![CI Status](http://img.shields.io/travis/Takahiro Fujita/BitByteStream.svg?style=flat)](https://travis-ci.org/Takahiro Fujita/BitByteStream)
+[![CI Status](http://img.shields.io/travis/takfjt/BitByteStream.svg?style=flat)](https://travis-ci.org/takfjt/BitByteStream)
 [![Version](https://img.shields.io/cocoapods/v/BitByteStream.svg?style=flat)](http://cocoapods.org/pods/BitByteStream)
 [![License](https://img.shields.io/cocoapods/l/BitByteStream.svg?style=flat)](http://cocoapods.org/pods/BitByteStream)
 [![Platform](https://img.shields.io/cocoapods/p/BitByteStream.svg?style=flat)](http://cocoapods.org/pods/BitByteStream)
