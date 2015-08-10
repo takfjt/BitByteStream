@@ -21,7 +21,7 @@
 
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
-#import "BitByteStream.h"
+#import <BitByteStream/BitByteStream.h>
 
 @interface BitByteStreamTest : XCTestCase
 
