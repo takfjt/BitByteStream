@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BitByteStream"
-  s.version          = "0.0.2"
+  s.version          = "1.0.0"
   s.summary          = "conversion stream between bit and byte"
   s.description      = <<-DESC
                        This library provides the conversion stream between bit and byte.
