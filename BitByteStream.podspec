@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "BitByteStream"
-  s.version          = "0.0.1"
+  s.version          = "0.0.2"
   s.summary          = "conversion stream between bit and byte"
   s.description      = <<-DESC
                        This library provides the conversion stream between bit and byte.
@@ -26,7 +26,7 @@ Pod::Spec.new do |s|
 
   s.source_files = 'Pod/Classes/**/*'
   s.resource_bundles = {
-    'BitByteStream' => ['Pod/Assets/*.png']
+  #  'BitByteStream' => ['Pod/Assets/*.png']
   }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
