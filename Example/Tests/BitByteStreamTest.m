@@ -295,5 +295,144 @@
   XCTAssertEqual(data[1], 0x05, @"Pass");
 }
 
+- (void)testReadBitFromEmpty {
+  uint8_t data[1] = {0};
+  NSInteger len;
+  len = [b readBit: data maxLength: 1];
+  XCTAssertEqual(len, 0, @"Pass");
+}
 
+- (void)testReadBitFromNotEnoughByte {
+  uint8_t data[16] = {0};
+  NSInteger len;
+  [b writeByte:0xb7];
+
+  len = [b readBit: data maxLength: 16];
+
+  XCTAssertEqual(len, 8, @"Pass");
+
+  XCTAssertEqual(data[0], 0x01, @"Pass");
+  XCTAssertEqual(data[1], 0x00, @"Pass");
+  XCTAssertEqual(data[2], 0x01, @"Pass");
+  XCTAssertEqual(data[3], 0x01, @"Pass");
+  XCTAssertEqual(data[4], 0x00, @"Pass");
+  XCTAssertEqual(data[5], 0x01, @"Pass");
+  XCTAssertEqual(data[6], 0x01, @"Pass");
+  XCTAssertEqual(data[7], 0x01, @"Pass");
+}
+
+- (void)testReadBitContinuous {
+  uint8_t data[16] = {0};
+  NSInteger len;
+
+  [b writeByte:0xb7];
+  
+  len = [b readBit: data maxLength: 4];
+  
+  XCTAssertEqual(len, 4, @"Pass");
+  
+  XCTAssertEqual(data[0], 0x01, @"Pass");
+  XCTAssertEqual(data[1], 0x00, @"Pass");
+  XCTAssertEqual(data[2], 0x01, @"Pass");
+  XCTAssertEqual(data[3], 0x01, @"Pass");
+
+  [b writeByte:0xb7];
+  
+  len = [b readBit: data maxLength: 4];
+  
+  XCTAssertEqual(len, 4, @"Pass");
+
+  XCTAssertEqual(data[0], 0x00, @"Pass");
+  XCTAssertEqual(data[1], 0x01, @"Pass");
+  XCTAssertEqual(data[2], 0x01, @"Pass");
+  XCTAssertEqual(data[3], 0x01, @"Pass");
+
+  len = [b readBit: data maxLength: 8];
+  
+  XCTAssertEqual(len, 8, @"Pass");
+
+  XCTAssertEqual(data[0], 0x01, @"Pass");
+  XCTAssertEqual(data[1], 0x00, @"Pass");
+  XCTAssertEqual(data[2], 0x01, @"Pass");
+  XCTAssertEqual(data[3], 0x01, @"Pass");
+  XCTAssertEqual(data[4], 0x00, @"Pass");
+  XCTAssertEqual(data[5], 0x01, @"Pass");
+  XCTAssertEqual(data[6], 0x01, @"Pass");
+  XCTAssertEqual(data[7], 0x01, @"Pass");
+}
+
+- (void)testReadBitOverInput {
+  uint8_t data[32] = {0};
+  NSInteger len;
+
+  b.byteToBitQueueLength = 2;
+
+  len = [b writeByte:0x01];
+
+  XCTAssertEqual(len, 1, @"Pass");
+
+  len = [b writeByte:0x02];
+  
+  XCTAssertEqual(len, 1, @"Pass");
+
+  len = [b writeByte:0x03];
+  
+  XCTAssertEqual(len, 0, @"Pass");
+
+  len = [b readBit: data maxLength: 32];
+  
+  XCTAssertEqual(len, 16, @"Pass");
+
+  XCTAssertEqual(data[ 0], 0x00, @"Pass");
+  XCTAssertEqual(data[ 1], 0x00, @"Pass");
+  XCTAssertEqual(data[ 2], 0x00, @"Pass");
+  XCTAssertEqual(data[ 3], 0x00, @"Pass");
+  XCTAssertEqual(data[ 4], 0x00, @"Pass");
+  XCTAssertEqual(data[ 5], 0x00, @"Pass");
+  XCTAssertEqual(data[ 6], 0x00, @"Pass");
+  XCTAssertEqual(data[ 7], 0x01, @"Pass");
+
+  XCTAssertEqual(data[ 8], 0x00, @"Pass");
+  XCTAssertEqual(data[ 9], 0x00, @"Pass");
+  XCTAssertEqual(data[10], 0x00, @"Pass");
+  XCTAssertEqual(data[11], 0x00, @"Pass");
+  XCTAssertEqual(data[12], 0x00, @"Pass");
+  XCTAssertEqual(data[13], 0x00, @"Pass");
+  XCTAssertEqual(data[14], 0x01, @"Pass");
+  XCTAssertEqual(data[15], 0x00, @"Pass");
+
+  len = [b writeByte:0x04];
+  
+  XCTAssertEqual(len, 1, @"Pass");
+  
+  len = [b writeByte:0x05];
+  
+  XCTAssertEqual(len, 1, @"Pass");
+  
+  len = [b writeByte:0x06];
+  
+  XCTAssertEqual(len, 0, @"Pass");
+  
+  len = [b readBit: data maxLength: 32];
+  
+  XCTAssertEqual(len, 16, @"Pass");
+  
+  XCTAssertEqual(data[ 0], 0x00, @"Pass");
+  XCTAssertEqual(data[ 1], 0x00, @"Pass");
+  XCTAssertEqual(data[ 2], 0x00, @"Pass");
+  XCTAssertEqual(data[ 3], 0x00, @"Pass");
+  XCTAssertEqual(data[ 4], 0x00, @"Pass");
+  XCTAssertEqual(data[ 5], 0x01, @"Pass");
+  XCTAssertEqual(data[ 6], 0x00, @"Pass");
+  XCTAssertEqual(data[ 7], 0x00, @"Pass");
+
+  XCTAssertEqual(data[ 8], 0x00, @"Pass");
+  XCTAssertEqual(data[ 9], 0x00, @"Pass");
+  XCTAssertEqual(data[10], 0x00, @"Pass");
+  XCTAssertEqual(data[11], 0x00, @"Pass");
+  XCTAssertEqual(data[12], 0x00, @"Pass");
+  XCTAssertEqual(data[13], 0x01, @"Pass");
+  XCTAssertEqual(data[14], 0x00, @"Pass");
+  XCTAssertEqual(data[15], 0x01, @"Pass");
+}
 @end

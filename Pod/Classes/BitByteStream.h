@@ -40,14 +40,73 @@
  Writes a provided bit to the queue.
  
  @param bit The bit to write
+ @return The number of bits actually written.
  */
 - (NSInteger)writeBit:(uint8_t)bit;
 
+/**
+ Writes a provided bit to the queue.
+ 
+ @param bit The bit to write
+ @param bitCount The number of times to repeat a provided bit
+ @return The number of bits actually written.
+ */
 - (NSInteger)writeBit:(uint8_t)bit withCount:(NSUInteger)bitCount;
 
+/**
+ Reads up to a given number of bytes into a given buffer.
+ 
+ @param buffer A data buffer. The buffer must be large enough to contain the number of bytes specified by len.
+ @param len The maximum number of bytes to read.
+ @return The number of bytes read
+ */
 - (NSInteger)readByte:(uint8_t *)buffer maxLength:(NSUInteger)len;
 
+/**
+ Removes all objects from `Bit to Byte Queue`.
+ */
+- (void)clearBitToByteStream;
+
+///-------------------------------
+/// @name Byte To Bit Stream
+///-------------------------------
+
+/**
+ The Length of `Byte to Bit Queue`.
+ */
 @property (atomic, getter=getByteToBitQueueLength,setter=setByteToBitQueueLength:) NSUInteger byteToBitQueueLength;
+
+/**
+ Writes a provided byte to the queue.
+ 
+ @param byte The byte to write
+ @return The number of bytes actually written.
+ */
+- (NSInteger)writeByte:(uint8_t)byte;
+
+/**
+ Writes the contents of a provided data buffer to the queue.
+
+ @param buffer The data to write
+ @return The number of bytes actually written.
+*/
+- (NSInteger)writeByteFromBuffer:(uint8_t *)buffer maxLength:(NSUInteger)len;
+
+/**
+ Reads up to a given number of bits into a given buffer.
+ 
+ @param buffer A data buffer. The buffer must be large enough to contain the number of bits specified by len.
+ @param len The maximum number of bits to read.
+ @return The number of bits read
+ */
+- (NSInteger)readBit:(uint8_t *)buffer maxLength:(NSUInteger)len;
+
+/**
+ Removes all objects from `Byte to Bit Queue`.
+ */
+- (void)clearByteToBitStream;
+
+
 
 @end
 

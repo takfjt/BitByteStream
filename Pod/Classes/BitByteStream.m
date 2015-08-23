@@ -33,11 +33,11 @@
   NSLock *lockQueue;
   
   NSMutableArray *bitToByteQueue;
-  uint8_t bitToByteBuffer, bitToByteBufferChecker; // for input, LIFO
+  uint8_t bitToByteData, bitToByteDataChecker; // for input, LIFO
   NSLock *bitToByteLock;
   
   NSMutableArray *byteToBitQueue;
-  uint8_t byteToBitBuffer, byteToBitBufferChecker; // for output, LIFO
+  uint8_t byteToBitData, byteToBitDataChecker; // for output, LIFO
   NSLock *byteToBitLock;
 }
 @synthesize bitToByteQueueLength;
@@ -50,18 +50,25 @@
   self = [super init];
   if (self) {
     bitToByteQueue = [NSMutableArray array];
-    bitToByteBuffer = 0;
-    bitToByteBufferChecker = 0;
+    bitToByteData = 0;
+    bitToByteDataChecker = 0;
     bitToByteLock = [[NSLock alloc] init];
     self.bitToByteQueueLength = DEFAULT_QUEUE_LENGTH;
 
     byteToBitQueue = [NSMutableArray array];
-    byteToBitBuffer = 0;
-    byteToBitBufferChecker = 0;
+    byteToBitData = 0;
+    byteToBitDataChecker = 0;
     byteToBitLock = [[NSLock alloc] init];
     self.byteToBitQueueLength = DEFAULT_QUEUE_LENGTH;
 }
   return self;
+}
+
+
+- (void)clearStream
+{
+  [self _clearBitToByteStream];
+  [self _clearByteToBitStream];
 }
 
 #pragma mark Bit To Byte Stream
@@ -85,32 +92,19 @@
   [bitToByteLock unlock];
 }
 
-- (NSUInteger)getByteToBitQueueLength
-{
-  return byteToBitQueueLength;
-}
-
-- (void)setByteToBitQueueLength:(NSUInteger)_byteToBitQueueLength
-{
-  if (_byteToBitQueueLength > MAX_QUEUE_LENGTH) {
-    _byteToBitQueueLength = MAX_QUEUE_LENGTH;
-  }
-  byteToBitQueueLength = _byteToBitQueueLength;
-}
-
 - (NSInteger)_writeBit:(uint8_t)bit
 {
   if ([bitToByteQueue count] >= self.bitToByteQueueLength) {
     return 0;
   }
 
-  bitToByteBuffer = (bitToByteBuffer << 1) | (bit & 0x01);
-  bitToByteBufferChecker++;
+  bitToByteData = (bitToByteData << 1) | (bit & 0x01);
+  bitToByteDataChecker++;
   
-  if (bitToByteBufferChecker == 8) {
-    [bitToByteQueue addObject: [NSNumber numberWithInt: (bitToByteBuffer & 0xff)]];
-    bitToByteBuffer = 0;
-    bitToByteBufferChecker = 0;
+  if (bitToByteDataChecker == 8) {
+    [bitToByteQueue addObject: [NSNumber numberWithInt: (bitToByteData & 0xff)]];
+    bitToByteData = 0;
+    bitToByteDataChecker = 0;
   }
   
   return 1;
@@ -161,29 +155,113 @@
   return len;
 }
 
-- (NSInteger)writeByte:(const uint8_t *)buffer maxLength:(NSUInteger)len
-{
-  return 0;
-}
-
 - (void)_clearBitToByteStream
 {
+  [bitToByteQueue removeAllObjects];
 }
+
 - (void)clearBitToByteStream
 {
+  [bitToByteLock lock];
+  [self _clearBitToByteStream];
+  [bitToByteLock unlock];
+}
+
+#pragma mark Byte to Bit Stream
+
+- (NSUInteger)getByteToBitQueueLength
+{
+  return byteToBitQueueLength;
+}
+
+- (void)setByteToBitQueueLength:(NSUInteger)_byteToBitQueueLength
+{
+  if (_byteToBitQueueLength > MAX_QUEUE_LENGTH) {
+    _byteToBitQueueLength = MAX_QUEUE_LENGTH;
+  }
+  [byteToBitLock lock];
+  byteToBitQueueLength = _byteToBitQueueLength;
+  while ([byteToBitQueue count] > byteToBitQueueLength) {
+    [byteToBitQueue removeLastObject];
+  }
+  [byteToBitLock unlock];
+
+}
+
+- (NSInteger)_writeByte:(uint8_t)byte
+{
+  if ([byteToBitQueue count] >= byteToBitQueueLength) {
+    return 0;
+  }
+  [byteToBitQueue addObject: [NSNumber numberWithInt: (byte & 0xff)]];
+  return 1;
+}
+
+- (NSInteger)writeByte:(uint8_t)byte
+{
+  NSInteger count = 0;
+  [byteToBitLock lock];
+  count += [self _writeByte: byte];
+  [byteToBitLock unlock];
+  return count;
+}
+
+- (NSInteger)writeByteFromBuffer:(uint8_t *)buffer maxLength:(NSUInteger)len
+{
+  NSInteger count = 0, i;
+  [byteToBitLock lock];
+  for (i = 0; i < len; i++) {
+    count += [self _writeByte: buffer[i]];
+  }
+  [byteToBitLock unlock];
+  return count;
+}
+
+- (NSInteger)_readBit:(uint8_t *)buffer
+{
+  NSInteger count = 0;
+  if (byteToBitDataChecker == 0 && [byteToBitQueue count] > 0) {
+    byteToBitData = (uint8_t)[byteToBitQueue[0] integerValue];
+    [byteToBitQueue removeObjectsInRange: NSMakeRange(0, 1)];
+    byteToBitDataChecker = 8;
+  }
+  if (byteToBitDataChecker > 0) {
+    buffer[0] = (byteToBitData >> 7) & 0x01;
+    byteToBitData <<= 1;
+    byteToBitDataChecker--;
+    count++;
+  }
+  
+  return count;
+}
+
+- (NSInteger)readBit:(uint8_t *)buffer maxLength:(NSUInteger)len
+{
+  NSInteger count = 0, i, ret;
+  [byteToBitLock lock];
+
+  for (i = 0; i < len; i++) {
+    ret =  [self _readBit: (buffer + i)];
+    if (ret == 0) {
+      break;
+    }
+    count++;
+  }
+  
+  [byteToBitLock unlock];
+  return count;
 }
 
 - (void)_clearByteToBitStream
 {
-}
-- (void)clearByteToBitStream
-{
+  [byteToBitQueue removeAllObjects];
 }
 
-- (void)clearStream
+- (void)clearByteToBitStream
 {
-  [self _clearBitToByteStream];
+  [byteToBitLock lock];
   [self _clearByteToBitStream];
+  [byteToBitLock unlock];
 }
 
 @end
