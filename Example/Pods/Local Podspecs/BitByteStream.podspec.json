@@ -1,6 +1,6 @@
 {
   "name": "BitByteStream",
-  "version": "0.0.2",
+  "version": "1.0.1",
   "summary": "conversion stream between bit and byte",
   "description": "This library provides the conversion stream between bit and byte.",
   "homepage": "https://github.com/takfjt/BitByteStream",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/takfjt/BitByteStream.git",
-    "tag": "0.0.2"
+    "tag": "1.0.1"
   },
   "platforms": {
     "ios": "8.0"
