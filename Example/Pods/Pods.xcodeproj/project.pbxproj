@@ -7,74 +7,58 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0232AD7C53740EF2D00847486A75FD64 /* BitByteStream.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BD49879101462F82834E9288208D1D29 /* BitByteStream.bundle */; };
+		0D6C01D2AD03617EBE398A47F921216F /* BitByteStream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 24FD97B456E0A2F5369D271BF304575C /* BitByteStream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114FAF1FECCC4C4214F5E3CDAA28D637 /* Pods-BitByteStream_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 246682C4D3E0F8735C076694987610CA /* Pods-BitByteStream_Tests-dummy.m */; };
-		146025FB66965F6B07A74F837B7C3DE0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6193EDEE1EA406BA62702AACCA791445 /* Foundation.framework */; };
 		1A4FD9D4DD96DF0F3A3EE7BD353368E3 /* Pods-BitByteStream_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4297A6CCB60D314A1C882777D5F80544 /* Pods-BitByteStream_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1C0F958699407CDBC24211C11C0011F2 /* BitByteStream-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B79DC5ED18820251F648F61DF37BF5BF /* BitByteStream-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EA7B0E76056AF0CC78DFE3D9C674A73 /* BitByteStream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C33C98DB3D42D674E26EDF6DC3E7629E /* BitByteStream-dummy.m */; };
-		335408173B42A46308C9688FF94A7C7F /* BitByteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A77EF400B501C47E2AF9D8832CEB3F9 /* BitByteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8C1FF83CB6FA63CDFDFECB4BFD43944 /* BitByteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 7AC82D9808B94098EC335477CE2FE526 /* BitByteStream.m */; };
-		CB106E937DEA3552E9AC9ACF6E373562 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6193EDEE1EA406BA62702AACCA791445 /* Foundation.framework */; };
+		1C87D9EFB4A4868540069501C1E9F316 /* BitByteStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 269FF0E54EDD7BD7E30F7BAED7873CAC /* BitByteStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		310E5850F32FBF79F409F323F3924B8D /* BitByteStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 3ABE6466331497D6662FD5DB07AC434E /* BitByteStream.m */; };
+		51CD38E6DF60785519135DE21F0F3860 /* BitByteStream-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 710333F57000FAF55F7460133580927A /* BitByteStream-dummy.m */; };
+		CB106E937DEA3552E9AC9ACF6E373562 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD517D7B9366DDD88CE8F77391818D48 /* Foundation.framework */; };
+		F018139215D666BD4BE6986DEF2447C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD517D7B9366DDD88CE8F77391818D48 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		91EA828CB971D745E9B7D196B7C21429 /* PBXContainerItemProxy */ = {
+		FC3F9DA5AABDEC1EBF165ABD01416E4A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1406C8A431051A80EEB061BC3D52301B;
-			remoteInfo = "BitByteStream-BitByteStream";
-		};
-		99936F217BBC67EABAB80210F18E6948 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D77A4AF1AA1D8BDAFB159B2DEA04BBD3;
+			remoteGlobalIDString = B6D8DA1652F4688829DF0DADFEF73A0D;
 			remoteInfo = BitByteStream;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09445A7435434EF35E392A983C9B4F31 /* BitByteStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BitByteStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C6C6436AAC9B7668DDBE2A8AAB5ADBE /* Pods-BitByteStream_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BitByteStream_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		1B87D379A527F94C05216FC9451E6B54 /* Pods-BitByteStream_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-BitByteStream_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		246682C4D3E0F8735C076694987610CA /* Pods-BitByteStream_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-BitByteStream_Tests-dummy.m"; sourceTree = "<group>"; };
+		24FD97B456E0A2F5369D271BF304575C /* BitByteStream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BitByteStream-umbrella.h"; sourceTree = "<group>"; };
+		269FF0E54EDD7BD7E30F7BAED7873CAC /* BitByteStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BitByteStream.h; sourceTree = "<group>"; };
+		2C1F2F42AC3BAB13E861441628DFCEA1 /* Pods-BitByteStream_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitByteStream_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		3ABE6466331497D6662FD5DB07AC434E /* BitByteStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BitByteStream.m; sourceTree = "<group>"; };
 		4297A6CCB60D314A1C882777D5F80544 /* Pods-BitByteStream_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-BitByteStream_Tests-umbrella.h"; sourceTree = "<group>"; };
 		4B89F34BBAC220E7E91722847EDD4923 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		59F2F446FB7B646B3C77BFF1E04772E8 /* Pods-BitByteStream_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitByteStream_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		5DE01C582D234F6624D27D4F42DBE6D4 /* BitByteStream.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = BitByteStream.modulemap; sourceTree = "<group>"; };
-		6193EDEE1EA406BA62702AACCA791445 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		6546DDA601AD7B59ADAFF6CE7802416F /* Pods-BitByteStream_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitByteStream_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6CF121C3FF361657286C32E1FCB01CFF /* BitByteStream.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BitByteStream.xcconfig; sourceTree = "<group>"; };
-		6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BitByteStream-Private.xcconfig"; sourceTree = "<group>"; };
-		7AC82D9808B94098EC335477CE2FE526 /* BitByteStream.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = BitByteStream.m; sourceTree = "<group>"; };
+		710333F57000FAF55F7460133580927A /* BitByteStream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BitByteStream-dummy.m"; sourceTree = "<group>"; };
 		7FE0104923ED8AB09B4930EDA5890F3C /* Pods_BitByteStream_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitByteStream_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		805A02B868E1F0316B7BA0D65C95F1F2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8A77EF400B501C47E2AF9D8832CEB3F9 /* BitByteStream.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = BitByteStream.h; sourceTree = "<group>"; };
 		B20E38260B4EADE19AB2341FE227F841 /* Pods-BitByteStream_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitByteStream_Tests-resources.sh"; sourceTree = "<group>"; };
-		B2476E912414EDF8D848E40E17DF94A6 /* BitByteStream.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BitByteStream.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B79DC5ED18820251F648F61DF37BF5BF /* BitByteStream-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BitByteStream-umbrella.h"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		BAE7440555B4078FF5CD0B920E2BB7E7 /* Pods-BitByteStream_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-BitByteStream_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		BD49879101462F82834E9288208D1D29 /* BitByteStream.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitByteStream.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		C33C98DB3D42D674E26EDF6DC3E7629E /* BitByteStream-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BitByteStream-dummy.m"; sourceTree = "<group>"; };
+		E71A616B5A2F43C6CA129DC772A6F126 /* BitByteStream-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "BitByteStream-Private.xcconfig"; sourceTree = "<group>"; };
 		E7566620B4367A3D9ED8978199376DCD /* BitByteStream-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BitByteStream-prefix.pch"; sourceTree = "<group>"; };
+		FAABCB22F96137C5152A58A4012B3076 /* Pods-BitByteStream_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BitByteStream_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FD517D7B9366DDD88CE8F77391818D48 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		FFFF0CE5C6AEE448C011F7A75C6054ED /* Pods-BitByteStream_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-BitByteStream_Tests.modulemap"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		171F6742EF60AF1575ABBE3FD0376381 /* Frameworks */ = {
+		71A257F57C6C4F50A0B3F76E904CF2E5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		A46A7F0039A7E4B45CAF77EF5C91B484 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				146025FB66965F6B07A74F837B7C3DE0 /* Foundation.framework in Frameworks */,
+				F018139215D666BD4BE6986DEF2447C0 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,10 +88,10 @@
 			children = (
 				5DE01C582D234F6624D27D4F42DBE6D4 /* BitByteStream.modulemap */,
 				6CF121C3FF361657286C32E1FCB01CFF /* BitByteStream.xcconfig */,
-				6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */,
-				C33C98DB3D42D674E26EDF6DC3E7629E /* BitByteStream-dummy.m */,
+				E71A616B5A2F43C6CA129DC772A6F126 /* BitByteStream-Private.xcconfig */,
+				710333F57000FAF55F7460133580927A /* BitByteStream-dummy.m */,
 				E7566620B4367A3D9ED8978199376DCD /* BitByteStream-prefix.pch */,
-				B79DC5ED18820251F648F61DF37BF5BF /* BitByteStream-umbrella.h */,
+				24FD97B456E0A2F5369D271BF304575C /* BitByteStream-umbrella.h */,
 				805A02B868E1F0316B7BA0D65C95F1F2 /* Info.plist */,
 			);
 			name = "Support Files";
@@ -117,8 +101,8 @@
 		1F65B629D5C5B4A9925FCF3F00FFF535 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				8A77EF400B501C47E2AF9D8832CEB3F9 /* BitByteStream.h */,
-				7AC82D9808B94098EC335477CE2FE526 /* BitByteStream.m */,
+				269FF0E54EDD7BD7E30F7BAED7873CAC /* BitByteStream.h */,
+				3ABE6466331497D6662FD5DB07AC434E /* BitByteStream.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -134,7 +118,7 @@
 		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				6193EDEE1EA406BA62702AACCA791445 /* Foundation.framework */,
+				FD517D7B9366DDD88CE8F77391818D48 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
@@ -169,8 +153,8 @@
 				BAE7440555B4078FF5CD0B920E2BB7E7 /* Pods-BitByteStream_Tests-frameworks.sh */,
 				B20E38260B4EADE19AB2341FE227F841 /* Pods-BitByteStream_Tests-resources.sh */,
 				4297A6CCB60D314A1C882777D5F80544 /* Pods-BitByteStream_Tests-umbrella.h */,
-				6546DDA601AD7B59ADAFF6CE7802416F /* Pods-BitByteStream_Tests.debug.xcconfig */,
-				59F2F446FB7B646B3C77BFF1E04772E8 /* Pods-BitByteStream_Tests.release.xcconfig */,
+				FAABCB22F96137C5152A58A4012B3076 /* Pods-BitByteStream_Tests.debug.xcconfig */,
+				2C1F2F42AC3BAB13E861441628DFCEA1 /* Pods-BitByteStream_Tests.release.xcconfig */,
 			);
 			name = "Pods-BitByteStream_Tests";
 			path = "Target Support Files/Pods-BitByteStream_Tests";
@@ -179,8 +163,7 @@
 		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BD49879101462F82834E9288208D1D29 /* BitByteStream.bundle */,
-				B2476E912414EDF8D848E40E17DF94A6 /* BitByteStream.framework */,
+				09445A7435434EF35E392A983C9B4F31 /* BitByteStream.framework */,
 				7FE0104923ED8AB09B4930EDA5890F3C /* Pods_BitByteStream_Tests.framework */,
 			);
 			name = Products;
@@ -205,6 +188,15 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		47675E30187AFEA249CA17D0DC4E45F2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D6C01D2AD03617EBE398A47F921216F /* BitByteStream-umbrella.h in Headers */,
+				1C87D9EFB4A4868540069501C1E9F316 /* BitByteStream.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E060B97FF8532BC44E28A66B01C58A9A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -213,35 +205,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EED640ED16A07C6AFD2DD0E35AAAC434 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1C0F958699407CDBC24211C11C0011F2 /* BitByteStream-umbrella.h in Headers */,
-				335408173B42A46308C9688FF94A7C7F /* BitByteStream.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1406C8A431051A80EEB061BC3D52301B /* BitByteStream-BitByteStream */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9BE8F5C7EA7F6175B07A1E3B0DE27FCD /* Build configuration list for PBXNativeTarget "BitByteStream-BitByteStream" */;
-			buildPhases = (
-				64DE8A361ED1EBC61CF36CC202DE8D07 /* Sources */,
-				171F6742EF60AF1575ABBE3FD0376381 /* Frameworks */,
-				03E1DB0CCA74CD3305FF77215D733E2A /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "BitByteStream-BitByteStream";
-			productName = "BitByteStream-BitByteStream";
-			productReference = BD49879101462F82834E9288208D1D29 /* BitByteStream.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		600CB11709F4DC1A53A928D17EAD2032 /* Pods-BitByteStream_Tests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 658E6AA485FC7F66D069D45616BDAC55 /* Build configuration list for PBXNativeTarget "Pods-BitByteStream_Tests" */;
@@ -253,30 +219,28 @@
 			buildRules = (
 			);
 			dependencies = (
-				89C587DE179274B7E7BD389712B64AFC /* PBXTargetDependency */,
+				297D713980D0498CF8146F5FECF9BA0D /* PBXTargetDependency */,
 			);
 			name = "Pods-BitByteStream_Tests";
 			productName = "Pods-BitByteStream_Tests";
 			productReference = 7FE0104923ED8AB09B4930EDA5890F3C /* Pods_BitByteStream_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D77A4AF1AA1D8BDAFB159B2DEA04BBD3 /* BitByteStream */ = {
+		B6D8DA1652F4688829DF0DADFEF73A0D /* BitByteStream */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 69321EDB8EEC96FBC9843B4A42477C85 /* Build configuration list for PBXNativeTarget "BitByteStream" */;
+			buildConfigurationList = 1AF4687B698665244CFE9E6E3F79F63C /* Build configuration list for PBXNativeTarget "BitByteStream" */;
 			buildPhases = (
-				EE5829AD5FCDA74E9260019660EEB734 /* Sources */,
-				A46A7F0039A7E4B45CAF77EF5C91B484 /* Frameworks */,
-				5C1C6EB13A77AB301CD59524C1A384C8 /* Resources */,
-				EED640ED16A07C6AFD2DD0E35AAAC434 /* Headers */,
+				8DC22F632BEDDFEEFB10BBE4D642F13A /* Sources */,
+				71A257F57C6C4F50A0B3F76E904CF2E5 /* Frameworks */,
+				47675E30187AFEA249CA17D0DC4E45F2 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				50FBBEAF2DDC68B030167C96F4DB7074 /* PBXTargetDependency */,
 			);
 			name = BitByteStream;
 			productName = BitByteStream;
-			productReference = B2476E912414EDF8D848E40E17DF94A6 /* BitByteStream.framework */;
+			productReference = 09445A7435434EF35E392A983C9B4F31 /* BitByteStream.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -300,36 +264,19 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D77A4AF1AA1D8BDAFB159B2DEA04BBD3 /* BitByteStream */,
-				1406C8A431051A80EEB061BC3D52301B /* BitByteStream-BitByteStream */,
+				B6D8DA1652F4688829DF0DADFEF73A0D /* BitByteStream */,
 				600CB11709F4DC1A53A928D17EAD2032 /* Pods-BitByteStream_Tests */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		03E1DB0CCA74CD3305FF77215D733E2A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5C1C6EB13A77AB301CD59524C1A384C8 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0232AD7C53740EF2D00847486A75FD64 /* BitByteStream.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
 /* Begin PBXSourcesBuildPhase section */
-		64DE8A361ED1EBC61CF36CC202DE8D07 /* Sources */ = {
+		8DC22F632BEDDFEEFB10BBE4D642F13A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51CD38E6DF60785519135DE21F0F3860 /* BitByteStream-dummy.m in Sources */,
+				310E5850F32FBF79F409F323F3924B8D /* BitByteStream.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,80 +288,131 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EE5829AD5FCDA74E9260019660EEB734 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EA7B0E76056AF0CC78DFE3D9C674A73 /* BitByteStream-dummy.m in Sources */,
-				A8C1FF83CB6FA63CDFDFECB4BFD43944 /* BitByteStream.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		50FBBEAF2DDC68B030167C96F4DB7074 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "BitByteStream-BitByteStream";
-			target = 1406C8A431051A80EEB061BC3D52301B /* BitByteStream-BitByteStream */;
-			targetProxy = 91EA828CB971D745E9B7D196B7C21429 /* PBXContainerItemProxy */;
-		};
-		89C587DE179274B7E7BD389712B64AFC /* PBXTargetDependency */ = {
+		297D713980D0498CF8146F5FECF9BA0D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BitByteStream;
-			target = D77A4AF1AA1D8BDAFB159B2DEA04BBD3 /* BitByteStream */;
-			targetProxy = 99936F217BBC67EABAB80210F18E6948 /* PBXContainerItemProxy */;
+			target = B6D8DA1652F4688829DF0DADFEF73A0D /* BitByteStream */;
+			targetProxy = FC3F9DA5AABDEC1EBF165ABD01416E4A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0308EAAC468042AE0CF21434B4865927 /* Release */ = {
+		050ACE178D63F76DCD7C671347C68F73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */;
+			baseConfigurationReference = 2C1F2F42AC3BAB13E861441628DFCEA1 /* Pods-BitByteStream_Tests.release.xcconfig */;
 			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BitByteStream_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BitByteStream_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B7E5C157C9D4675936D83D4ED22CAA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71A616B5A2F43C6CA129DC772A6F126 /* BitByteStream-Private.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.0.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.0.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BitByteStream/BitByteStream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BitByteStream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BitByteStream/BitByteStream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = BitByteStream;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
-		03CA91998D6773EC5D02B3DB87B8353E /* Release */ = {
+		81C54408DB73FB34E0265B3F862F33E2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E71A616B5A2F43C6CA129DC772A6F126 /* BitByteStream-Private.xcconfig */;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 0.0.2;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 0.0.2;
+				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BitByteStream/BitByteStream-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BitByteStream/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				STRIP_INSTALLED_PRODUCT = NO;
-				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BitByteStream/BitByteStream.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BitByteStream;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
+		8A9AB8F9C220BF89BC39622139860D5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FAABCB22F96137C5152A58A4012B3076 /* Pods-BitByteStream_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-BitByteStream_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_BitByteStream_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -453,138 +451,57 @@
 			};
 			name = Debug;
 		};
-		0B762C72ABE2C2805C55F54F2CCD8420 /* Release */ = {
+		FB45FFD90572718D82AB9092B750F0CA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.0.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BitByteStream/BitByteStream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BitByteStream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BitByteStream/BitByteStream.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BitByteStream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		2A6A52741DC83BC5ECEB580071EF1BD4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6546DDA601AD7B59ADAFF6CE7802416F /* Pods-BitByteStream_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BitByteStream_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BitByteStream_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		72255F6B787DF837266917AE0CEA8D45 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.0.1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.0.1;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BitByteStream/BitByteStream-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BitByteStream/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BitByteStream/BitByteStream.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = BitByteStream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		854B0F0BB323008F97AA33DC2D269B21 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6D42F409E42436D694DEFE64EDB57E33 /* BitByteStream-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = BitByteStream;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		E30FA54368133247E650F6CA688240C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 59F2F446FB7B646B3C77BFF1E04772E8 /* Pods-BitByteStream_Tests.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-BitByteStream_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-BitByteStream_Tests/Pods-BitByteStream_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_BitByteStream_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1AF4687B698665244CFE9E6E3F79F63C /* Build configuration list for PBXNativeTarget "BitByteStream" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B7E5C157C9D4675936D83D4ED22CAA7 /* Debug */,
+				81C54408DB73FB34E0265B3F862F33E2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */,
-				03CA91998D6773EC5D02B3DB87B8353E /* Release */,
+				A70CDAD61F90AC503C7D04CC22DA2923 /* Debug */,
+				FB45FFD90572718D82AB9092B750F0CA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -592,26 +509,8 @@
 		658E6AA485FC7F66D069D45616BDAC55 /* Build configuration list for PBXNativeTarget "Pods-BitByteStream_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				2A6A52741DC83BC5ECEB580071EF1BD4 /* Debug */,
-				E30FA54368133247E650F6CA688240C7 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		69321EDB8EEC96FBC9843B4A42477C85 /* Build configuration list for PBXNativeTarget "BitByteStream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				72255F6B787DF837266917AE0CEA8D45 /* Debug */,
-				0B762C72ABE2C2805C55F54F2CCD8420 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9BE8F5C7EA7F6175B07A1E3B0DE27FCD /* Build configuration list for PBXNativeTarget "BitByteStream-BitByteStream" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				854B0F0BB323008F97AA33DC2D269B21 /* Debug */,
-				0308EAAC468042AE0CF21434B4865927 /* Release */,
+				8A9AB8F9C220BF89BC39622139860D5F /* Debug */,
+				050ACE178D63F76DCD7C671347C68F73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

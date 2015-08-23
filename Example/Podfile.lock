@@ -1,5 +1,5 @@
 PODS:
-  - BitByteStream (0.0.1)
+  - BitByteStream (0.0.2)
 
 DEPENDENCIES:
   - BitByteStream (from `../`)
@@ -9,6 +9,6 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  BitByteStream: 56a11be5876f0b9c7a3525fd0fc9215b30c670a1
+  BitByteStream: 522cd14f9ad430915000330c8195d69f52e5280e
 
 COCOAPODS: 0.38.2

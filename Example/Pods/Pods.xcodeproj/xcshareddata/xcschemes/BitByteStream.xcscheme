@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B076BD64E41ECFCAB85FB814"
+               BlueprintIdentifier = "FFF6ECF7EA91467D05BF46DC"
                BuildableName = "BitByteStream.framework"
                BlueprintName = "BitByteStream"
                ReferencedContainer = "container:Pods.xcodeproj">
